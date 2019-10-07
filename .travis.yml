@@ -8,8 +8,8 @@ install:
   - mv hugo ~/bin/
 script:
   - bin/ci-script.sh
-after_script:
-  - bin/ci-after-script.sh
+before_deploy:
+  - bin/ci-before-deploy.sh
 deploy:
   - provider: pages
     skip_cleanup: true
