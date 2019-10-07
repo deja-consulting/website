@@ -1,0 +1,48 @@
+baseurl = "https://deja.consulting"
+title = "Matthias Deja"
+theme = "madoc-dimension"
+languageCode = "de-de"
+defaultContentLanguage = "de"
+enableRobotsTXT = true
+publishDir = "docs"
+
+[params]
+  logoImage = "/images/mdeja.png"
+  copyright = 'Matthias Deja'
+
+[[params.social]]
+  medium = "linkedin"
+  icon = "linkedin"
+  link = "https://www.linkedin.com/in/matthias-deja/"
+
+[[params.social]]
+  medium = "xing"
+  icon = "xing"
+  link = "https://www.xing.com/profile/MatthiasJ_Deja"
+
+[[params.social]]
+  medium = "stack-overflow"
+  icon = "stack-overflow"
+  link = "https://stackoverflow.com/users/540173/madoc"
+
+[[params.social]]
+  medium = "github"
+  icon = "github"
+  link = "https://github.com/jackadull"
+
+[[params.social]]
+  medium = "bitbucket"
+  icon = "bitbucket"
+  link = "https://bitbucket.org/Madoc/"
+
+[languages]
+
+  [languages.de]
+    languageName = "Deutsch"
+    weight = 1
+    description = '<!--[-->Software-Architekt, Entwickler, Freelancer, <br/>über 15 Jahre IT-Erfahrung<!--]-->'
+
+#  [languages.en]
+#    languageName = "English"
+#    weight = 2
+#    description = '<!--[-->Software Architect, Developer, Freelancer, <br/>Professional experience: &gt; 15 years<!--]-->'
