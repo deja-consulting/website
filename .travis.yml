@@ -17,7 +17,7 @@ deploy:
     keep_history: false
     local_dir: target
     repo: deja-consulting/staging.deja.consulting
-    fqdn: static.deja.consulting
+    fqdn: staging.deja.consulting
     on:
       tags: true
       condition: "$TRAVIS_TAG = 'staging'"
