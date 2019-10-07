@@ -1,3 +1,3 @@
 [submodule "themes/madoc-dimension"]
 	path = themes/madoc-dimension
-	url = git@github.com:deja-consulting/madoc-dimension.git
+	url = https://github.com/deja-consulting/madoc-dimension.git
