@@ -21,3 +21,13 @@ deploy:
     on:
       tags: false
       branch: release/next
+  - provider: pages
+    skip_cleanup: true
+    github_token: "$DEPLOY_GITHUB_TOKEN"
+    keep_history: false
+    local_dir: target
+    repo: deja-consulting/deja.consulting
+    fqdn: deja.consulting
+    on:
+      tags: false
+      branch: release/latest
