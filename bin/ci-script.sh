@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-if [[ "$TRAVIS_TAG" = "staging" ]]; then
+if [[ "$TRAVIS_BRANCH" = "release/next" ]]; then
   baseurl="https://staging.deja.consulting"
 else
   baseurl="https://deja.consulting"

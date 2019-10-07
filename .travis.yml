@@ -19,5 +19,5 @@ deploy:
     repo: deja-consulting/staging.deja.consulting
     fqdn: staging.deja.consulting
     on:
-      tags: true
-      condition: "$TRAVIS_TAG = 'staging'"
+      tags: false
+      branch: release/next
