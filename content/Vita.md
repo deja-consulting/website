@@ -7,7 +7,7 @@ draft = false
 
 Einen Lebenslauf im PDF-Format können Sie hier herunterladen:
 
-<a href="/docs/Matthias Deja - CV.pdf" style="display: block; text-align: center">
+<a href="/docs/Matthias-Deja-CV-Overview-de.pdf" style="display: block; text-align: center">
   <img src="/images/pdf.png" alt="PDF Download" style="vertical-align: middle" /> &nbsp;&nbsp; Matthias Deja - CV.pdf
 </a>
 
