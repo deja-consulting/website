@@ -1,0 +1,23 @@
+env:
+  global:
+    - HUGO_VERSION="0.58.3"
+    - secure: rTnwmefySZ4djE4w1ZCZpQLJs2/PNYTXwoUjPfhOK5KA416uDmxSL7cm+ogktw6YAli6B0+p0tbMG3PZo94EG2R1rdi8P1B/Pars67QDsN4GvuCyGy1T2AxT0GDXmE5XqbODBGHK/328Ww3uEvedUxcWCPDSYn7IBjUzzxm+vC2WK3JWIN9ifNoPMJAHiqTikhKDMihW2BWdP46/ekrR2S4JZO5zpfkSaiA9MIQlvvm9BePK5qwN1AIPJv2lx/4t1tKfFHPIN4BQrRrmXNQ9/hdIxRJQD/F9uoOBWy+iCxUt8xrBHvOuK2JUrK+80fI+WYQB921WgCs+DnzXPy254stqOv/qjG7a5KC+d4CEYVFRX8+UC4baK9v170E7AHh8FNuPfGDpm4Q4El5w023SpuXbR6qp1/KiOpRDgXpCPpuBMeD6KhT2QUqcPDEek2Wr9mwsjKwj1XGBT2lyegxnmyBAxuYXsrvDo7qNBiOISM/EWW+XdifPQaQ0kTr+FyBxtgJrwnBmlOxfFOySk1H+7N4Vwy6LBjqopBm2CiTGNl1AbsMk8LO63QHk7FAM4VGEImtMNE7l7fDIDB1ZDxe+xGKVXAV3tr291X2O32KniwIuUb5IlPUqvrSS3y3u8svsvjnNWTnubSj5/uMmuhDQMY733xUDAEGLCBOGqCubXS0=
+install:
+  - wget -q https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+  - tar xf hugo_${HUGO_VERSION}_Linux-64bit.tar.gz
+  - mv hugo ~/bin/
+script:
+  - bin/ci-script.sh
+after_script:
+  - bin/ci-after-script.sh
+deploy:
+  - provider: pages
+    skip_cleanup: true
+    github_token: "$DEPLOY_GITHUB_TOKEN"
+    keep_history: false
+    local_dir: target
+    repo: deja-consulting/staging.deja.consulting
+    fqdn: static.deja.consulting
+    on:
+      tags: true
+      condition: "$TRAVIS_TAG = 'staging'"
