@@ -1,28 +1,28 @@
-<p>
-  Email: <b><a href="mailto:m@deja.consulting">m@deja.consulting</a></b>
-  <br/>
-  <b>oder</b></br/>
-  Kontaktformular:
-</p>
 
-<form method="post" action="https://formspree.io/m@deja.consulting">
-  <div class="field half first">
-    <label for="name">Name</label>
-    <input type="text" name="name" id="name" />
-  </div>
-  <div class="field half">
-    <label for="email">Email</label>
-    <input type="text" name="email" id="email" />
-  </div>
-  <div class="field">
-    <label for="message">Ihre Nachricht an mich</label>
-    <textarea name="message" id="message" rows="4"></textarea>
-  </div>
-  <ul class="actions">
-    <li><input type="submit" value="Abschicken" class="special" /></li>
-    <li><input type="reset" value="Löschen" /></li>
-  </ul>
-  <input type="hidden" name="_next" value="//deja.consulting/#Kontaktiert" />
-  <input type="hidden" name="_subject" value="[deja.consulting] Kontaktformular" />
-  <input type="hidden" name="_language" value="de" />
-</form>
+    <p>
+      Email: <b><a href="mailto:m@deja.consulting">m@deja.consulting</a></b><br/>
+      <b>oder</b><br/>
+      Kontaktformular:
+    </p>
+    <form action="https://formspree.io/m@deja.consulting" method="post">
+      <div class="field half first">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text"/>
+      </div>
+      <div class="field half">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="text"/>
+      </div>
+      <div class="field">
+        <label for="message">Ihre Nachricht an mich</label>
+        <textarea rows="4" id="message" name="message"></textarea>
+      </div>
+      <ul class="actions">
+        <li><input class="special" value="Abschicken" type="submit"/></li>
+        <li><input value="Löschen" type="reset"/></li>
+      </ul>
+      <input value="//deja.consulting/#Kontaktiert" name="_next" type="hidden"/>
+      <input value="[deja.consulting] Kontaktformular" name="_subject" type="hidden"/>
+      <input value="de" name="_language" type="hidden"/>
+    </form>
+  
