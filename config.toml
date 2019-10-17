@@ -40,9 +40,9 @@ publishDir = "target"
   [languages.de]
     languageName = "Deutsch"
     weight = 1
-    description = '<!--[-->Software-Architekt, Entwickler, Freelancer, <br/>über 15 Jahre IT-Erfahrung<!--]-->'
+    description = '<!--[-->Selbstständiger IT-Consultant und Software-Entwickler, <br/>über 15 Jahre IT-Erfahrung<!--]-->'
 
 #  [languages.en]
 #    languageName = "English"
 #    weight = 2
-#    description = '<!--[-->Software Architect, Developer, Freelancer, <br/>Professional experience: &gt; 15 years<!--]-->'
+#    description = '<!--[-->Selbstständiger IT-Consultant und Software-Entwickler, <br/>Professional experience: &gt; 15 years<!--]-->'
