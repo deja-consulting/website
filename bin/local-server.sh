@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-hugo -s . server
+TRAVIS_BUILD_NUMBER="42" hugo -s . server
